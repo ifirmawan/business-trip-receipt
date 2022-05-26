@@ -2329,13 +2329,41 @@
       margin-top: -25px;
     }
 
+    .tb-space {
+      padding: 16px 0;
+    }
+
+    .space {
+      padding: 16px;
+    }
+
     .bordered {
       border-width: 1px;
       border-color: #212121;
       border-style: solid;
     }
 
-    .bordered.x2 {
+    .bl {
+      border-left: 1px solid #212121;
+    }
+
+    .br {
+      border-right: 1px solid #212121;
+    }
+
+    .bb {
+      border-bottom: 1px solid #212121;
+    }
+
+    .bt {
+      border-top: 1px solid #212121;
+    }
+
+    .bordered.x2,
+    .bt.x2,
+    .bb.x2,
+    .bl.x2,
+    .br.x2 {
       border-width: 2px;
     }
 
@@ -2346,11 +2374,23 @@
     .text-right {
       text-align: right;
     }
+
+    .text-left {
+      text-align: left;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    hr {
+      border: 1px solid #212121;
+    }
   </style>
 </head>
 
 <body>
-  <div class="container bordered x2">
+  <div class="container bordered x2 tb-space">
     <div class="row">
       <div class="col-2 header-logo" style="text-align: center;">
       </div>
@@ -2388,6 +2428,135 @@
             </span>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+  <div class="container bl br bb x2 space">
+    <div class="row">
+      <div class="col-3">
+        Urusan Pemerintahan
+      </div>
+      <div class="col-2">
+        <div class="d-flex">
+          <span class="text-left">:</span>&nbsp;&nbsp;
+          <span class="text-right">4.08.01</span>
+        </div>
+      </div>
+      <div class="col-7">
+        Urusan Pemerintahan Fungsi Penunjang Administrasi Pemerintahan
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-3">
+        Unit Organisasi
+      </div>
+      <div class="col-2">
+        <div class="d-flex">
+          <span class="text-left">:</span>&nbsp;&nbsp;
+          <span class="text-right">4.08.01</span>
+        </div>
+      </div>
+      <div class="col-7">
+        Sekretariat DPRD
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-3">
+        Sub Unit Organisasi
+      </div>
+      <div class="col-2">
+        <div class="d-flex">
+          <span class="text-left">:</span>&nbsp;&nbsp;
+          <span class="text-right">4.08.01.01</span>
+        </div>
+      </div>
+      <div class="col-7">
+        Sekretariat DPRD
+      </div>
+    </div>
+    <hr />
+    <div class="row">
+      <div class="col-3">
+        Program
+      </div>
+      <div class="col-9">
+        <div class="d-flex">
+          <span class="text-left">:</span>&nbsp;&nbsp;
+          <span class="text-right"></span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-3">
+        Kegiatan
+      </div>
+      <div class="col-2">
+        <div class="d-flex">
+          <span class="text-left">:</span>&nbsp;&nbsp;
+          <span class="text-right">4.08.4.08.01.01.06</span>
+        </div>
+      </div>
+      <div class="col-7">
+        Administrasi Umum Perangkat Daerah
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-3">
+        Kode Rekening
+      </div>
+      <div class="col-2">
+        <div class="d-flex">
+          <span class="text-left">:</span>&nbsp;&nbsp;
+          <span class="text-right">4.08.4.08.01.01.06.09</span>
+        </div>
+      </div>
+      <div class="col-7">
+        Penyelenggaraan Rapat Koordinasi dan Konsultasi
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-3">
+        Status pembayaran
+      </div>
+      <div class="col-2">
+        <div class="d-flex">
+          <span class="text-left">:</span>&nbsp;&nbsp;
+          <span class="text-right">5.1.02.04.01.0001</span>
+        </div>
+      </div>
+      <div class="col-7">
+        Belanja Perjalanan Dinas Biasa
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-3">
+        Berguna untuk keperluan
+      </div>
+      <div class="col-9">
+        <div class="d-flex">
+          <span class="text-left">:</span>&nbsp;&nbsp;
+          <span class="text-right"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container bl br bb x2">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h3>RINCIAN PANJAR PERHITUNGAN PERJALANAN DINAS</h3>
+      </div>
+    </div>
+  </div>
+  <div class="container bl br bb x2">
+    <div class="row">
+      <div class="col-1 br x2">
+        No
+      </div>
+      <div class="col-9 br x2">
+        Uraian
+      </div>
+      <div class="col-2">
+        Jumlah
       </div>
     </div>
   </div>
