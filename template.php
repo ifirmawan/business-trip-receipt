@@ -2410,6 +2410,13 @@
     hr {
       border: 1px solid #212121;
     }
+
+    * {
+      -webkit-print-color-adjust: exact !important;
+      /* Chrome, Safari, Edge */
+      color-adjust: exact !important;
+      /*Firefox*/
+    }
   </style>
 </head>
 <?php

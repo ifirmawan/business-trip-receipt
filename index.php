@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <button type="button" onclick="handleOnPrint(1)">Print</button>
+    <button type="button" onclick="handleOnPrint(2)">Print</button>
     <script>
         function handleOnPrint(idData) {
             const printWindow = window.open(`/template.php?id=${idData}`);
