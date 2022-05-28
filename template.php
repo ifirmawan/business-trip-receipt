@@ -2412,8 +2412,24 @@
     }
   </style>
 </head>
+<?php
+$getID =  $_GET['id'] ?? 1;
+$customers = [
+  (object) [
+    'id' => '1',
+    'name' => 'Muhammad Alfienda',
+    'role' => 'Komisaris'
+  ],
+  (object) [
+    'id' => '2',
+    'name' => 'Iwan Firmawan',
+    'role' => 'Staf Bagian'
+  ],
+];
+$indexCust = array_search($getID, array_column($customers, 'id'));
+?>
 
-<body>
+<body onload="window.print()">
   <div class="container-fluid bordered x2 tb-space">
     <div class="row">
       <div class="col-2 header-logo" style="text-align: center;">
@@ -2674,13 +2690,17 @@
           <li>
             <div class="d-flex" style="gap: 32px;">
               <span>Nama</span>
-              <span style="font-weight: 800;">ANIKE WAY</span>
+              <span style="font-weight: 800;">
+                <?= $customers[$indexCust]->name ?? 'Annike Way' ?>
+              </span>
             </div>
           </li>
           <li>
             <div class="d-flex" style="gap: 22px;">
               <span>Jabatan</span>
-              <span>STAF BAG</span>
+              <span>
+                <?= $customers[$indexCust]->role ?? 'Kepala Bagian' ?>
+              </span>
             </div>
           </li>
         </ul>
@@ -2775,13 +2795,17 @@
           <li>
             <div class="d-flex" style="gap: 32px;">
               <span>Nama</span>
-              <span style="font-weight: 800;">ANIKE WAY</span>
+              <span style="font-weight: 800;">
+                <?= $customers[$indexCust]->name ?? 'Anne Way' ?>
+              </span>
             </div>
           </li>
           <li>
             <div class="d-flex" style="gap: 22px;">
               <span>Jabatan</span>
-              <span>STAF BAG</span>
+              <span>
+                <?= $customers[$indexCust]->role ?? 'Kepala Bag.' ?>
+              </span>
             </div>
           </li>
         </ul>
