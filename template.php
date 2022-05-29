@@ -1417,7 +1417,16 @@
       }
     }
 
+    @page {
+      size: A4;
+      margin: 0.01;
+    }
+
     @media print {
+      body {
+        zoom: 60%;
+      }
+
       .d-print-none {
         display: none !important
       }
